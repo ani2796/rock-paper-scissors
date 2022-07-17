@@ -30,18 +30,16 @@ function round(playerSelection, computerSelection) {
 }
 
 function game() {
-    for(let i = 0; i < 5; i++) {
-        let playerSelection = prompt("Please enter your choice", "");
-        let computerSelection = computerPlay();
-        
-        playerSelection = playerSelection.toLowerCase();
-        computerSelection = computerSelection.toLowerCase();
+    let playerSelection = prompt("Please enter your choice", "");
+    let computerSelection = computerPlay();
+    
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
 
-        if(!(playerSelection === "rock") ||
-            (playerSelection === "paper") ||
-            (playerSelection === "scissors"))
-            playerSelection = "invalid choice";
-        console.log("And the result is...\n");
-        console.log(round(playerSelection, computerSelection));
-    }
+    if(!(playerSelection === "rock") ||
+        (playerSelection === "paper") ||
+        (playerSelection === "scissors"))
+        playerSelection = "invalid choice";
+    console.log("And the result is...\n");
+    console.log(round(playerSelection, computerSelection));
 }
