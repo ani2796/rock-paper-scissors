@@ -30,7 +30,7 @@ function round(playerSelection, computerSelection) {
 }
 
 function game() {
-    let playerSelection = prompt("Please enter your choice", "");
+    //let playerSelection = prompt("Please enter your choice", "");
     let computerSelection = computerPlay();
     
     playerSelection = playerSelection.toLowerCase();
